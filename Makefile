@@ -27,14 +27,8 @@ else
 
 all:
 	@cd vio;     make
-ifeq ($(ARCH_LIBNAME),$(filter $(ARCH_LIBNAME), hi3559v200))
-	@cd svp; make
-endif
 clean:
 	@cd vio;     make clean
-ifeq ($(ARCH_LIBNAME),$(filter $(ARCH_LIBNAME), hi3559v200))
-	@cd svp; make clean
-endif
 endif
 
 else
@@ -58,7 +52,6 @@ endif
 	@cd vgs;     make
 	@cd vio;     make
 	@cd vo;      make
-	@cd svp;     make
 	@cd scene_auto;make
 	@cd calcflicker; make
 clean:
@@ -80,7 +73,6 @@ endif
 	@cd vgs;     make clean
 	@cd vio;     make clean
 	@cd vo;      make clean
-	@cd svp;     make clean
 	@cd scene_auto;make clean
 	@cd calcflicker; make clean
 
