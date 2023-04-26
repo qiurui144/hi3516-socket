@@ -52,7 +52,7 @@ Mkfile.old
 dkms.conf
 
 # Sample Demo
-sample*
+#sample_*
 svp/*
 lsc_online_cali/lsc_online_cali
 uvc_app/uvc_app
